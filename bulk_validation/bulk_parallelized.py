@@ -373,7 +373,8 @@ def solve_bulk_point(t_start, t_end, dt_max, y0,
         return sol.y[:, -1]
 
     except IntegrationDiverged as e:
-        print(f"Pixel diverged: {e}")
+        # DEBUG print
+        # print(f"Pixel diverged: {e}")
         return np.full(len(y0), np.nan)
 
 
