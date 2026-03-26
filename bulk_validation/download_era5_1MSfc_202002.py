@@ -22,4 +22,4 @@ req1["download_format"] = "unarchived"
 
 
 client = cdsapi.Client()
-client.retrieve(dataset, req1).download("/work/mh1498/m301248/TCO_data/E5_1M_sst_202002.nc")
+client.retrieve(dataset, req1).download("/work/mh1498/m301248/TCO_data/E5_1MSfc_202002.nc")
