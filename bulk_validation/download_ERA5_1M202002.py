@@ -21,7 +21,19 @@ request = {
         "900", "925", "950",
         "1000"
     ],
-    "year": ["2020"],
+    "year": [
+        "1990", "1991", "1992",
+        "1993", "1994", "1995",
+        "1996", "1997", "1998",
+        "1999", "2000", "2001",
+        "2002", "2003", "2004",
+        "2005", "2006", "2007",
+        "2008", "2009", "2010",
+        "2011", "2012", "2013",
+        "2014", "2015", "2016",
+        "2017", "2018", "2019",
+        "2020"
+    ],
     "month": ["02"],
     "time": ["00:00"],
     "data_format": "netcdf",
@@ -29,4 +41,4 @@ request = {
 }
 
 client = cdsapi.Client()
-client.retrieve(dataset, request).download()
+client.retrieve(dataset, request).download("/work/mh1498/m301248/TCO_data/U_era5_climatology/E5_1MAir_02.nc")

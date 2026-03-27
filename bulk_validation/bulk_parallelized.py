@@ -24,7 +24,7 @@ params = {
     
     ### Define some forcing variables for the BOMEX example -> this will be given as input parameters.
     "F_advq" : -1.2e-3/86400,                 # [kg/kg/s]
-    "F_advth" : 0.0/86400,                    # [K/s]
+    "F_advth" : -1/86400,                    # [K/s]
     "F_rad" : -2.0/86400,                     # [K/s]
     "ref_p" : 1000                           # [hPa], reference pressure for the potential temperature
 }
