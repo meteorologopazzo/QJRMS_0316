@@ -187,7 +187,7 @@ params = {
     "Cqc" : 0.1,                             # [1], cloud level exchange coefficient for q
     "Cthc" : 0.03,                           # [1], cloud level exchange coefficient for theta
     "Le" : 2.5e6,                            # [J/kg], latent heat of vaporization 
-    "cpd" : 1004.67,                        # [J/K/kg], dry air specific heat at constant pressure
+    "cpd" : 1004.67,                         # [J/K/kg], dry air specific heat at constant pressure
     "Rd" : 287.1,                            # [J/K/kg], dry air gas constant
     # air density is supposed to be constant and equal to 1...
     "beta" : 0.36,
@@ -196,10 +196,10 @@ params = {
     "CD" : 1/900.,                            # drag coefficient.
     
     ### Define some forcing variables for the BOMEX example -> this will be given as input parameters.
-    "F_advq" : -1.2e-3/86400,                 # [kg/kg/s]
-    "F_advth" : 0.0/86400,                    # [K/s]
-    "F_rad" : -2.0/86400,                     # [K/s]
-    "ref_p" : 1000                           # [hPa], reference pressure for the potential temperature
+    "F_advq" : -0.6e-3/86400,   #-1.2e-3/86400,                # [kg/kg/s]
+    "F_advth" : -1.1/86400,     #0.0/86400,                    # [K/s]
+    "F_rad" : -2.0/86400,                                      # [K/s]
+    "ref_p" : 1000                                             # [hPa], reference pressure for the potential temperature
 }
 
 import warnings
